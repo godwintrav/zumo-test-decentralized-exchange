@@ -45,15 +45,15 @@ DEPLOYMENT PROCESS:
 
 Firstly run npm i in the terminal to install all the required packages
 
-run the command truffle develop in the terminal to open the development console so we can run our tests to ensure the smart contract is working the way we want.
+run the command: truffle develop in the terminal to open the development console so we can run our tests to ensure the smart contract is working the way we want.
 Type in test in the truffle develop console to run the tests.
 
 In the truffle.config.js:
-To deploy to the Goerli testnet we need the Goerli endpoint URL(you can get one from Infura) then we add it to the goerli object in the networks object, also we need the private key of the address which is going to deploy the contract(store the private key in a safe location) and call in the goerli object, we also need the network id depending on the test network you are deploying to, for Goerli it is 5.
+To deploy to the Goerli testnet we need the Goerli RPC endpoint URL(you can get one from Infura Node Provider) then we add it to the goerli object in the networks object, also we need the private key of the address which is going to deploy the contract(store the private key in a safe location) and call in the goerli object, we also need the network id depending on the test network you are deploying to, for Goerli it is 5.
 
 In your terminal type in the command 
 truffle migrate --network goerli
 
-Then truffle runs the scripts in the migrations folder of the project in numerical order with.
+Then truffle runs the deploy scripts in the migrations folder of the project in numerical order with.
 the command --network tells truffle what network to deploy the smart contract to.
 Now the smart contract is deployed to the Goerli test network. Thank you.
